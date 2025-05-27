@@ -25,7 +25,7 @@ export default async function handler(req,res) {
     장르 : ${type}
     나라 : ${country}
     
-    이 사람에게 추천해줄 만한 드라마를 알려줘`;
+    이 사람이 좋아할만한 드라마 3개를 추천해줘.`;
 
     const result=await ai.models.generateContent({
       model: "gemini-2.0-flash",
